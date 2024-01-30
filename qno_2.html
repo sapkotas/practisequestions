@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This a website</p>
+    <script>
+        //  //qno 2: use confirm to ask if the user wants to drive again
+ let driveAgain = true;
+ const  canDrive = (age) => {
+   return age >=18 ? true : false;
+    }
+
+    while(driveAgain){
+    let age = Number(prompt("Enter your age:"));
+    if (canDrive(age)){
+   alert(" You can drive");
+    }
+ else{
+    alert ("You cannot drive");
+    }
+    driveAgain = confirm("Do you want to drive again?");
+    }
+    </script>
+        
+    
+</body>
+</html>

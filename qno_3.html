@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            // qno 3: In the previous questions , use console.error to log the error if age entered is negative
+
+ let driveAgain = true;
+ const  canDrive = (age) => {
+   return age >=18 ? true : false;
+    }
+
+    while(driveAgain){
+    let age = Number(prompt("Enter your age:"));
+    if (age < 0){
+        console.error("Age cannot be negative")
+        break;
+    }
+    if (canDrive(age)){
+   alert(" You can drive");
+    }
+ else{
+    alert ("You cannot drive");
+    }
+    driveAgain = confirm("Do you want to drive again?");
+    }
+
+        </script>
+</body>
+</html>
