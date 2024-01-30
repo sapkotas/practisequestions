@@ -8,23 +8,17 @@
 <body>
     This is a website
     <script>
-        // Write a program to change the url to google.com if user enters a number greater than 4 and if number is less tahn 5 change the backround color.
+        // Write a program to change the url to google.com if user enters a number greater than 4 and if number is less than 4 change the backround color.
    let number;
-    
-    do{
-        number=Number(prompt("Enter the number"))
-        if (number >= 1 && number < 7) 
-        color=prompt("Enter your choice of color:")
-        document.body.style.backround = color
-        break;
-    }while(number < 7)
-    if(number > 7){
-        location.href = "https://google.com";
+   number = Number(prompt("Enter the number"))
+    if(number > 4){
+        location.href = "https://google.com"
     }
-    // while(number < 7){
-    //     number=Number(prompt("Enter the number"))
-
-    // }
+    else{
+        let color = prompt("Enter your choice of color:")
+        document.body.style.background = color;
+    }
+   
     </script>
 </body>
 </html>
