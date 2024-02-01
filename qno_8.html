@@ -1,0 +1,52 @@
+<!-- write a JS code to change the background color of all <li> tags to "red" -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>qno_8</title>
+    </head>
+    <body>
+        <!-- create a nav bar and change the color of its first element to red -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qno_5</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;;
+        }
+        nav{
+            
+            display: flex;
+            background: cyan;  
+        }
+        nav li{
+            list-style: none;
+            padding: 0px 23px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        
+    </nav>
+    <script>
+        //array.from is used to convert in array
+        let a = Array.from(document.getElementsByTagName("li"));
+        a.forEach(element => {
+        element.style.background = "red";
+        });
+    </script>
+    </body>
+    </html> 
